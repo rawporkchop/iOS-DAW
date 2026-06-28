@@ -56,3 +56,7 @@ void AudioEngine::stop() {
 
     callback.manager.removeAudioCallback(&callback);
 }
+
+void AudioEngine::restart() {
+    start();
+}
