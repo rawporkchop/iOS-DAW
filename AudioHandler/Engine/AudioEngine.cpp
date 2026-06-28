@@ -6,12 +6,12 @@ namespace {
 
 class Callback : public juce::AudioIODeviceCallback {
 
-        // First member necessary for proper initialization
-        juce::ScopedJuceInitialiser_GUI juceInitialiser;
+    // First member necessary for proper initialization
+    juce::ScopedJuceInitialiser_GUI juceInitialiser;
+
 public:
-    void audioDeviceAboutToStart(
-        juce::AudioIODevice*
-    ) override {}
+    void audioDeviceAboutToStart(juce::AudioIODevice*) override {
+    }
 
     void audioDeviceStopped() override {}
 
@@ -23,14 +23,6 @@ public:
         int numSamples,
         const juce::AudioIODeviceCallbackContext&
     ) override {
-
-        // Logging 
-        static std::atomic<int> counter { 0 };
-        counter++;
-        if (counter % 1000 == 0) {
-            DBG("Audio callback alive");
-        }
-
         for (int ch = 0; ch < numOutputs; ++ch)
             if (outputs[ch])
                 juce::FloatVectorOperations::clear(
@@ -56,15 +48,11 @@ void AudioEngine::start() {
         true
     );
 
-    callback.manager.addAudioCallback(
-        &callback
-    );
+    callback.manager.addAudioCallback(&callback);
 }
 
 void AudioEngine::stop() {
     DBG("Engine stopping");
 
-    callback.manager.removeAudioCallback(
-        &callback
-    );
+    callback.manager.removeAudioCallback(&callback);
 }

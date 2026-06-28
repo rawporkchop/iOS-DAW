@@ -27,9 +27,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         try? session.setCategory(.playAndRecord, mode: .default)
         try? session.setActive(true)
         
-        DispatchQueue.main.async {
-            AudioEngine_start()
-        }
+        AudioEngine_start()
         return true
     }
 }
