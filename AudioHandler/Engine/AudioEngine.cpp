@@ -5,6 +5,9 @@
 namespace {
 
 class Callback : public juce::AudioIODeviceCallback {
+
+        // First member necessary for proper initialization
+        juce::ScopedJuceInitialiser_GUI juceInitialiser;
 public:
     void audioDeviceAboutToStart(
         juce::AudioIODevice*
