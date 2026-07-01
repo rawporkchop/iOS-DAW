@@ -6,7 +6,9 @@
 #include "AudioRuntime.hpp"
 
 AudioRuntime::AudioRuntime()
-    : eventBus{}, audioEngine{}, audioEventManager{eventBus, audioEngine} {
+    : eventBus{}, audioEngine{}, audioEventManager{eventBus, audioEngine} {}
+
+void AudioRuntime::startEngine() {
     eventBus.push(EngineStart{});
     audioEventManager.processEvents();
 }

@@ -7,6 +7,8 @@
 class AudioRuntime {
 public:
     AudioRuntime();
+
+    void startEngine();
     
 private:
     EventBus eventBus;

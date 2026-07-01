@@ -1,6 +1,8 @@
 add_library(AudioHandlerEngine STATIC
+    AudioRuntime/AudioRuntime.cpp
     AudioEngine/AudioEngine.cpp
-    AudioEngineManager/AudioEngineManager.cpp
+    EventBus/EventBus.cpp
+    AudioEventManager/AudioEventManager.cpp
 )
 
 target_include_directories(AudioHandlerEngine PUBLIC
