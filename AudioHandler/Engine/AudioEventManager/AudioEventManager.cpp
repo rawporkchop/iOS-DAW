@@ -5,8 +5,7 @@
 #include "AudioEventManager.hpp"
 
 // --- Singleton Implementation ---
-AudioEventManager& AudioEventManager::getInstance()
-{
+AudioEventManager& AudioEventManager::getInstance() {
     static AudioEventManager instance;
     return instance;
 }

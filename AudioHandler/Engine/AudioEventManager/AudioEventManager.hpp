@@ -7,12 +7,12 @@
 #include "../AudioEngine/AudioEngine.hpp"
 
 /**
- * @brief Pure C++ Event Manager responsible for the full lifecycle of the audio
- * device connection. This class acts as the single source of truth for the
- * audio engine state, making it easily consumable by C++ modules and by Swift
+ * @brief Pure C++ Event Manager responsible for the full event-based
+ * connection between the Swift frontend and the C++ backend. This class serves
+ * as the single source of truth of the audio engine state, making it easily
+ * consumable by C++ modules and by Swift
  */
-class AudioEventManager
-{
+class AudioEventManager {
 public:
     // Singleton access pattern
     static AudioEventManager& getInstance();
