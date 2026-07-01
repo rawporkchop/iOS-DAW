@@ -5,6 +5,8 @@
 // #include <juce_core/juce_core.h>
 
 #include "../AudioEngine/AudioEngine.hpp"
+#include "../Event/Events.hpp"
+#include "../Bus/EventBus.hpp"
 
 /**
  * @brief Pure C++ Event Manager responsible for the full event-based
@@ -14,16 +16,29 @@
  */
 class AudioEventManager {
 public:
-    // Singleton access pattern
-    static AudioEventManager& getInstance();
-
-    AudioEventManager();
+    AudioEventManager(EventBus& bus, AudioEngine& audioEngine);
     ~AudioEventManager();
 
+    void processEvents();
+
 private:
-    AudioEngine audioEngine;
+    struct Handler {
+        Handler(AudioEngine& engine);
+
+        void operator()(const EngineStart e);
+
+    private:
+        AudioEngine& audioEngine;
+
+        Handler(const Handler&) = delete;
+        Handler& operator=(const Handler&) = delete;
+    };
 
     // Prevent copying and assignment (singleton)
     AudioEventManager(const AudioEventManager&) = delete;
     AudioEventManager& operator=(const AudioEventManager&) = delete;
+
+    EventBus& bus;
+    AudioEngine& audioEngine;
+    Handler handler;
 };
