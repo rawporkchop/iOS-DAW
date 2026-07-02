@@ -1,4 +1,4 @@
-#include "../Bus/EventBus.hpp"
+#include "../EventBus/EventBus.hpp"
 #include "../AudioEngine/AudioEngine.hpp"
 #include "../AudioEventManager/AudioEventManager.hpp"
 #include "../Event/Events.hpp"

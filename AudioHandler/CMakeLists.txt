@@ -34,5 +34,5 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
 # --- Subdirectories ---
-add_subdirectory(Engine)
-add_subdirectory(gtest)
+add_subdirectory(AudioRuntime)
+#add_subdirectory(gtest)

@@ -23,6 +23,8 @@ struct DAWApp: App {
 // Sets up correct iOS bitrate, sample rate, permissions
 class AppDelegate: NSObject, UIApplicationDelegate {
 
+    let runtime = AudioRuntime()
+    
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         setupAudioSession()
@@ -44,7 +46,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
         AVAudioApplication.requestRecordPermission { granted in
             DispatchQueue.main.async {
-                if granted { AudioEngine_start() }
+                if granted { runtime.startEngine() }
             }
         }
     }
@@ -56,7 +58,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
         if type == .ended {
             try? AVAudioSession.sharedInstance().setActive(true)
-            AudioEngine_restart()
+            runtime.restart()
         }
     }
 }

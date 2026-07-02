@@ -1,6 +1,10 @@
 // #include <juce_audio_devices/juce_audio_devices.h>
 // #include <juce_audio_basics/juce_audio_basics.h>
 // #include <juce_core/juce_core.h>
+#include "../AudioEngine/AudioEngine.hpp"
+#include "../Event/Events.hpp"
+#include "../EventBus/EventBus.hpp"
+
 #include "AudioEventManager.hpp"
 
 AudioEventManager::AudioEventManager(EventBus& bus, AudioEngine& audioEngine) 

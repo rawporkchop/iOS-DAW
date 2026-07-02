@@ -6,7 +6,7 @@
 
 #include "../AudioEngine/AudioEngine.hpp"
 #include "../Event/Events.hpp"
-#include "../Bus/EventBus.hpp"
+#include "../EventBus/EventBus.hpp"
 
 /**
  * @brief Pure C++ Event Manager responsible for the full event-based
