@@ -1,4 +1,4 @@
-module LIMIT1Engine {
-    header "AudioEngine.hpp"
+module LIMITAudioAPI {
+    header "AudioRuntime/AudioRuntimeAPI.hpp"
     export *
 }

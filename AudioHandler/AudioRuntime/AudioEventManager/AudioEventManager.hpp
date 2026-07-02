@@ -17,7 +17,7 @@
 class AudioEventManager {
 public:
     AudioEventManager(EventBus& bus, AudioEngine& audioEngine);
-    ~AudioEventManager();
+    ~AudioEventManager() = default;
 
     void processEvents();
 
