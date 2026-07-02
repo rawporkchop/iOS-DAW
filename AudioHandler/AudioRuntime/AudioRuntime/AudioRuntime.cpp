@@ -1,14 +1,19 @@
-#include "../EventBus/EventBus.hpp"
 #include "../AudioEngine/AudioEngine.hpp"
 #include "../AudioEventManager/AudioEventManager.hpp"
-#include "../Event/Events.hpp"
 
 #include "AudioRuntime.hpp"
 
 AudioRuntime::AudioRuntime()
-    : eventBus{}, audioEngine{}, audioEventManager{eventBus, audioEngine} {}
+    : audioEngine{}, audioEventManager{audioEngine} {}
 
 void AudioRuntime::startEngine() {
-    eventBus.push(EngineStart{});
-    audioEventManager.processEvents();
+    audioEventManager.processEvent(EngineStart{});
+}
+
+void AudioRuntime::restartEngine() {
+    audioEventManager.processEvent(EngineRestart{});
+}
+
+void AudioRuntime::stopEngine() {
+    audioEventManager.processEvent(EngineRestart{});
 }

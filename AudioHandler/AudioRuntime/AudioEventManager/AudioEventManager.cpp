@@ -1,23 +1,30 @@
 // #include <juce_audio_devices/juce_audio_devices.h>
 // #include <juce_audio_basics/juce_audio_basics.h>
 // #include <juce_core/juce_core.h>
+#include <variant>
 #include "../AudioEngine/AudioEngine.hpp"
 #include "../Event/Events.hpp"
-#include "../EventBus/EventBus.hpp"
 
 #include "AudioEventManager.hpp"
 
-AudioEventManager::AudioEventManager(EventBus& bus, AudioEngine& audioEngine) 
-    : bus{bus}, audioEngine{audioEngine}, handler{audioEngine} {}
+AudioEventManager::AudioEventManager(AudioEngine& audioEngine) 
+    : audioEngine{audioEngine}, handler{audioEngine} {}
 
 AudioEventManager::Handler::Handler(AudioEngine& engine)
     : audioEngine{engine} {}
 
-void AudioEventManager::Handler::operator()(const EngineStart) {
+void AudioEventManager::Handler::operator()(const EngineStart&) {
     audioEngine.initializeEngine();
 }
 
-void AudioEventManager::processEvents() {
-    Event e;
-    while (bus.pop(e)) std::visit(handler, e);
+void AudioEventManager::Handler::operator()(const EngineRestart&) {
+    audioEngine.restartEngine();
+}
+
+void AudioEventManager::Handler::operator()(const EngineStop&) {
+    audioEngine.stopEngine();
+}
+
+void AudioEventManager::processEvent(Event event) {
+    std::visit(handler, event);
 }

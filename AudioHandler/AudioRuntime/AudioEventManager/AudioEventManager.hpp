@@ -6,7 +6,6 @@
 
 #include "../AudioEngine/AudioEngine.hpp"
 #include "../Event/Events.hpp"
-#include "../EventBus/EventBus.hpp"
 
 /**
  * @brief Pure C++ Event Manager responsible for the full event-based
@@ -16,16 +15,18 @@
  */
 class AudioEventManager {
 public:
-    AudioEventManager(EventBus& bus, AudioEngine& audioEngine);
+    AudioEventManager(AudioEngine& audioEngine);
     ~AudioEventManager() = default;
 
-    void processEvents();
+    void processEvent(Event event);
 
 private:
     struct Handler {
         Handler(AudioEngine& engine);
 
-        void operator()(const EngineStart e);
+        void operator()(const EngineStart&);
+        void operator()(const EngineRestart&);
+        void operator()(const EngineStop&);
 
     private:
         AudioEngine& audioEngine;
@@ -38,7 +39,6 @@ private:
     AudioEventManager(const AudioEventManager&) = delete;
     AudioEventManager& operator=(const AudioEventManager&) = delete;
 
-    EventBus& bus;
     AudioEngine& audioEngine;
     Handler handler;
 };

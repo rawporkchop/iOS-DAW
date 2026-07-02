@@ -9,5 +9,5 @@ namespace {
 }
 
 void audioRuntime_start()   { instance().startEngine(); }
-// void audioRuntime_stop()    { instance().stopEngine(); }
-// void audioRuntime_restart() { instance().restartEngine(); }
+void audioRuntime_stop()    { instance().stopEngine(); }
+void audioRuntime_restart() { instance().restartEngine(); }

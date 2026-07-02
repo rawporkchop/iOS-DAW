@@ -1,0 +1,86 @@
+[
+{
+  "directory": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd",
+  "command": "/usr/bin/c++ -I/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/googletest-src/googlemock/include -I/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/googletest-src/googlemock -isystem /Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/googletest-src/googletest/include -isystem /Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/googletest-src/googletest -std=c++20 -arch arm64 -mmacosx-version-min=26.2  -DGTEST_HAS_PTHREAD=1   -o _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "file": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "output": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o"
+},
+{
+  "directory": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd",
+  "command": "/usr/bin/c++ -isystem /Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/googletest-src/googlemock/include -isystem /Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/googletest-src/googlemock -isystem /Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/googletest-src/googletest/include -isystem /Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/googletest-src/googletest -std=c++20 -arch arm64 -mmacosx-version-min=26.2  -DGTEST_HAS_PTHREAD=1   -o _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "file": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "output": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
+},
+{
+  "directory": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd",
+  "command": "/usr/bin/c++ -I/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/googletest-src/googletest/include -I/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/googletest-src/googletest -std=c++20 -arch arm64 -mmacosx-version-min=26.2  -DGTEST_HAS_PTHREAD=1   -o _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "file": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "output": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+},
+{
+  "directory": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd",
+  "command": "/usr/bin/c++ -isystem /Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/googletest-src/googletest/include -isystem /Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/googletest-src/googletest -std=c++20 -arch arm64 -mmacosx-version-min=26.2  -DGTEST_HAS_PTHREAD=1   -o _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "file": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "output": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
+},
+{
+  "directory": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd",
+  "command": "/usr/bin/c++ -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_MODULE_AVAILABLE_juce_audio_basics=1 -DJUCE_MODULE_AVAILABLE_juce_audio_devices=1 -DJUCE_MODULE_AVAILABLE_juce_core=1 -DJUCE_MODULE_AVAILABLE_juce_events=1 -DNDEBUG=1 -D_NDEBUG=1 -I/Users/oliver/Dev/LIMIT/AudioHandler/AudioRuntime -I/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/juce-src/modules -std=c++20 -arch arm64 -mmacosx-version-min=26.2 -o AudioRuntime/CMakeFiles/AudioRuntime.dir/AudioRuntime/AudioRuntime.cpp.o -c /Users/oliver/Dev/LIMIT/AudioHandler/AudioRuntime/AudioRuntime/AudioRuntime.cpp",
+  "file": "/Users/oliver/Dev/LIMIT/AudioHandler/AudioRuntime/AudioRuntime/AudioRuntime.cpp",
+  "output": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/AudioRuntime/CMakeFiles/AudioRuntime.dir/AudioRuntime/AudioRuntime.cpp.o"
+},
+{
+  "directory": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd",
+  "command": "/usr/bin/c++ -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_MODULE_AVAILABLE_juce_audio_basics=1 -DJUCE_MODULE_AVAILABLE_juce_audio_devices=1 -DJUCE_MODULE_AVAILABLE_juce_core=1 -DJUCE_MODULE_AVAILABLE_juce_events=1 -DNDEBUG=1 -D_NDEBUG=1 -I/Users/oliver/Dev/LIMIT/AudioHandler/AudioRuntime -I/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/juce-src/modules -std=c++20 -arch arm64 -mmacosx-version-min=26.2 -o AudioRuntime/CMakeFiles/AudioRuntime.dir/AudioRuntime/AudioRuntimeAPI.cpp.o -c /Users/oliver/Dev/LIMIT/AudioHandler/AudioRuntime/AudioRuntime/AudioRuntimeAPI.cpp",
+  "file": "/Users/oliver/Dev/LIMIT/AudioHandler/AudioRuntime/AudioRuntime/AudioRuntimeAPI.cpp",
+  "output": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/AudioRuntime/CMakeFiles/AudioRuntime.dir/AudioRuntime/AudioRuntimeAPI.cpp.o"
+},
+{
+  "directory": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd",
+  "command": "/usr/bin/c++ -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_MODULE_AVAILABLE_juce_audio_basics=1 -DJUCE_MODULE_AVAILABLE_juce_audio_devices=1 -DJUCE_MODULE_AVAILABLE_juce_core=1 -DJUCE_MODULE_AVAILABLE_juce_events=1 -DNDEBUG=1 -D_NDEBUG=1 -I/Users/oliver/Dev/LIMIT/AudioHandler/AudioRuntime -I/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/juce-src/modules -std=c++20 -arch arm64 -mmacosx-version-min=26.2 -o AudioRuntime/CMakeFiles/AudioRuntime.dir/AudioEngine/AudioEngine.cpp.o -c /Users/oliver/Dev/LIMIT/AudioHandler/AudioRuntime/AudioEngine/AudioEngine.cpp",
+  "file": "/Users/oliver/Dev/LIMIT/AudioHandler/AudioRuntime/AudioEngine/AudioEngine.cpp",
+  "output": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/AudioRuntime/CMakeFiles/AudioRuntime.dir/AudioEngine/AudioEngine.cpp.o"
+},
+{
+  "directory": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd",
+  "command": "/usr/bin/c++ -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_MODULE_AVAILABLE_juce_audio_basics=1 -DJUCE_MODULE_AVAILABLE_juce_audio_devices=1 -DJUCE_MODULE_AVAILABLE_juce_core=1 -DJUCE_MODULE_AVAILABLE_juce_events=1 -DNDEBUG=1 -D_NDEBUG=1 -I/Users/oliver/Dev/LIMIT/AudioHandler/AudioRuntime -I/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/juce-src/modules -std=c++20 -arch arm64 -mmacosx-version-min=26.2 -o AudioRuntime/CMakeFiles/AudioRuntime.dir/AudioEngine/Callback.cpp.o -c /Users/oliver/Dev/LIMIT/AudioHandler/AudioRuntime/AudioEngine/Callback.cpp",
+  "file": "/Users/oliver/Dev/LIMIT/AudioHandler/AudioRuntime/AudioEngine/Callback.cpp",
+  "output": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/AudioRuntime/CMakeFiles/AudioRuntime.dir/AudioEngine/Callback.cpp.o"
+},
+{
+  "directory": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd",
+  "command": "/usr/bin/c++ -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_MODULE_AVAILABLE_juce_audio_basics=1 -DJUCE_MODULE_AVAILABLE_juce_audio_devices=1 -DJUCE_MODULE_AVAILABLE_juce_core=1 -DJUCE_MODULE_AVAILABLE_juce_events=1 -DNDEBUG=1 -D_NDEBUG=1 -I/Users/oliver/Dev/LIMIT/AudioHandler/AudioRuntime -I/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/juce-src/modules -std=c++20 -arch arm64 -mmacosx-version-min=26.2 -o AudioRuntime/CMakeFiles/AudioRuntime.dir/AudioEventManager/AudioEventManager.cpp.o -c /Users/oliver/Dev/LIMIT/AudioHandler/AudioRuntime/AudioEventManager/AudioEventManager.cpp",
+  "file": "/Users/oliver/Dev/LIMIT/AudioHandler/AudioRuntime/AudioEventManager/AudioEventManager.cpp",
+  "output": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/AudioRuntime/CMakeFiles/AudioRuntime.dir/AudioEventManager/AudioEventManager.cpp.o"
+},
+{
+  "directory": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd",
+  "command": "/usr/bin/c++ -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_MODULE_AVAILABLE_juce_audio_basics=1 -DJUCE_MODULE_AVAILABLE_juce_audio_devices=1 -DJUCE_MODULE_AVAILABLE_juce_core=1 -DJUCE_MODULE_AVAILABLE_juce_events=1 -DNDEBUG=1 -D_NDEBUG=1 -I/Users/oliver/Dev/LIMIT/AudioHandler/AudioRuntime -I/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/juce-src/modules -std=c++20 -arch arm64 -mmacosx-version-min=26.2 -o AudioRuntime/CMakeFiles/AudioRuntime.dir/__/_deps/juce-src/modules/juce_audio_devices/juce_audio_devices.mm.o -c /Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/juce-src/modules/juce_audio_devices/juce_audio_devices.mm",
+  "file": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/juce-src/modules/juce_audio_devices/juce_audio_devices.mm",
+  "output": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/AudioRuntime/CMakeFiles/AudioRuntime.dir/__/_deps/juce-src/modules/juce_audio_devices/juce_audio_devices.mm.o"
+},
+{
+  "directory": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd",
+  "command": "/usr/bin/c++ -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_MODULE_AVAILABLE_juce_audio_basics=1 -DJUCE_MODULE_AVAILABLE_juce_audio_devices=1 -DJUCE_MODULE_AVAILABLE_juce_core=1 -DJUCE_MODULE_AVAILABLE_juce_events=1 -DNDEBUG=1 -D_NDEBUG=1 -I/Users/oliver/Dev/LIMIT/AudioHandler/AudioRuntime -I/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/juce-src/modules -std=c++20 -arch arm64 -mmacosx-version-min=26.2 -o AudioRuntime/CMakeFiles/AudioRuntime.dir/__/_deps/juce-src/modules/juce_audio_basics/juce_audio_basics.mm.o -c /Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/juce-src/modules/juce_audio_basics/juce_audio_basics.mm",
+  "file": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/juce-src/modules/juce_audio_basics/juce_audio_basics.mm",
+  "output": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/AudioRuntime/CMakeFiles/AudioRuntime.dir/__/_deps/juce-src/modules/juce_audio_basics/juce_audio_basics.mm.o"
+},
+{
+  "directory": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd",
+  "command": "/usr/bin/c++ -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_MODULE_AVAILABLE_juce_audio_basics=1 -DJUCE_MODULE_AVAILABLE_juce_audio_devices=1 -DJUCE_MODULE_AVAILABLE_juce_core=1 -DJUCE_MODULE_AVAILABLE_juce_events=1 -DNDEBUG=1 -D_NDEBUG=1 -I/Users/oliver/Dev/LIMIT/AudioHandler/AudioRuntime -I/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/juce-src/modules -std=c++20 -arch arm64 -mmacosx-version-min=26.2 -o AudioRuntime/CMakeFiles/AudioRuntime.dir/__/_deps/juce-src/modules/juce_core/juce_core_CompilationTime.cpp.o -c /Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/juce-src/modules/juce_core/juce_core_CompilationTime.cpp",
+  "file": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/juce-src/modules/juce_core/juce_core_CompilationTime.cpp",
+  "output": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/AudioRuntime/CMakeFiles/AudioRuntime.dir/__/_deps/juce-src/modules/juce_core/juce_core_CompilationTime.cpp.o"
+},
+{
+  "directory": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd",
+  "command": "/usr/bin/c++ -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_MODULE_AVAILABLE_juce_audio_basics=1 -DJUCE_MODULE_AVAILABLE_juce_audio_devices=1 -DJUCE_MODULE_AVAILABLE_juce_core=1 -DJUCE_MODULE_AVAILABLE_juce_events=1 -DNDEBUG=1 -D_NDEBUG=1 -I/Users/oliver/Dev/LIMIT/AudioHandler/AudioRuntime -I/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/juce-src/modules -std=c++20 -arch arm64 -mmacosx-version-min=26.2 -o AudioRuntime/CMakeFiles/AudioRuntime.dir/__/_deps/juce-src/modules/juce_core/juce_core.mm.o -c /Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/juce-src/modules/juce_core/juce_core.mm",
+  "file": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/juce-src/modules/juce_core/juce_core.mm",
+  "output": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/AudioRuntime/CMakeFiles/AudioRuntime.dir/__/_deps/juce-src/modules/juce_core/juce_core.mm.o"
+},
+{
+  "directory": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd",
+  "command": "/usr/bin/c++ -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_MODULE_AVAILABLE_juce_audio_basics=1 -DJUCE_MODULE_AVAILABLE_juce_audio_devices=1 -DJUCE_MODULE_AVAILABLE_juce_core=1 -DJUCE_MODULE_AVAILABLE_juce_events=1 -DNDEBUG=1 -D_NDEBUG=1 -I/Users/oliver/Dev/LIMIT/AudioHandler/AudioRuntime -I/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/juce-src/modules -std=c++20 -arch arm64 -mmacosx-version-min=26.2 -o AudioRuntime/CMakeFiles/AudioRuntime.dir/__/_deps/juce-src/modules/juce_events/juce_events.mm.o -c /Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/juce-src/modules/juce_events/juce_events.mm",
+  "file": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/_deps/juce-src/modules/juce_events/juce_events.mm",
+  "output": "/Users/oliver/Dev/LIMIT/AudioHandler/build-clangd/AudioRuntime/CMakeFiles/AudioRuntime.dir/__/_deps/juce-src/modules/juce_events/juce_events.mm.o"
+}
+]

@@ -1,6 +1,5 @@
 #pragma once
 
-#include "../EventBus/EventBus.hpp"
 #include "../AudioEngine/AudioEngine.hpp"
 #include "../AudioEventManager/AudioEventManager.hpp"
 
@@ -9,9 +8,10 @@ public:
     AudioRuntime();
 
     void startEngine();
+    void restartEngine();
+    void stopEngine();
     
 private:
-    EventBus eventBus;
     AudioEngine audioEngine;
     AudioEventManager audioEventManager;
 };

@@ -3,7 +3,6 @@ add_library(AudioRuntime STATIC
     AudioRuntime/AudioRuntimeAPI.cpp
     AudioEngine/AudioEngine.cpp
     AudioEngine/Callback.cpp
-    EventBus/EventBus.hpp
     Event/Events.hpp
     AudioEventManager/AudioEventManager.cpp
 )
